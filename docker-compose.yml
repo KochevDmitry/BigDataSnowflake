@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres
+    container_name: abd_laba_1 
+    environment:
+      POSTGRES_USER: postgre
+      POSTGRES_PASSWORD: postgre
+      POSTGRES_DB: abd_laba_1
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init_data:/init_data
